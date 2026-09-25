@@ -16,31 +16,45 @@
 }
 
 .header .left-section {
-  width: 208px;
+  width: 240px;
+  margin-left: -50px;
 }
 
 @media (max-width: 800px) {
   .header .left-section {
     width: unset;
+    margin-left: 0;
   }
 }
 
 .header .header-link {
-  display: inline-block;
-  padding: 6px 9.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 0;
   border-radius: 2px;
   cursor: pointer;
   text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid transparent;
 }
 
 .header .header-link:hover {
-  border: 1px solid white;
+  border-color: transparent;
 }
 
 .header .logo {
-  height: 26px;
-  margin-top: 1px;
+  height: 49px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.header .brand-name {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .header .mobile-logo {
@@ -54,8 +68,13 @@
 
   .header .mobile-logo {
     display: block;
-    height: 26px;
-    margin-top: 1px;
+    height: 49px;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .header .brand-name {
+    font-size: 18px;
   }
 }
 

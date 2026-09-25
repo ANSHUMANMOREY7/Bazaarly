@@ -23,12 +23,15 @@
 }
 
 .checkout-header .checkout-header-left-section {
-  width: 200px;
+  width: 220px;
+  margin-left: -8px;
 }
 
 .checkout-header .logo {
-  height: 26px;
-  margin-top: 0px;
+  height: 70px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .checkout-header .mobile-logo {
@@ -42,6 +45,7 @@
 @media (max-width: 575px) {
   .checkout-header .checkout-header-left-section {
     width: auto;
+    margin-left: 0;
   }
 
   .checkout-header .logo {
@@ -50,7 +54,8 @@
 
   .checkout-header .mobile-logo {
     display: inline-block;
-    height: 26px;
+    height: 32px;
+    width: auto;
   }
 }
 
